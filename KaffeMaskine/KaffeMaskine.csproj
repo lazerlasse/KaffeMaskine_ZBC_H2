@@ -43,17 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoffeeBeans\SpecialCoffeeBean.cs" />
+    <Compile Include="Dispencers\IBeanDispencer.cs" />
+    <Compile Include="Dispencers\ILiquidDispencer.cs" />
+    <Compile Include="Dispencers\StandardBeanDispencer.cs" />
+    <Compile Include="Dispencers\StandardLiquidDispencer.cs" />
+    <Compile Include="Heaters\StandardHeater.cs" />
+    <Compile Include="Liquids\Water.cs" />
+    <Compile Include="MainParts\Brewer.cs" />
+    <Compile Include="CoffeeBeans\IBean.cs" />
+    <Compile Include="Liquids\ILiquid.cs" />
     <Compile Include="MainParts\CoffeeMaker.cs" />
+    <Compile Include="Heaters\IHeater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Calculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CoffeeBeans\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Liquids\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

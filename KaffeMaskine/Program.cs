@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KaffeMaskine.MainParts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace KaffeMaskine
 	{
 		static void Main(string[] args)
 		{
+			CoffeeMaker.Instance.IsOn = true;
+			CoffeeMaker.Instance.RunCoffeeMaker();
 		}
 	}
 }
